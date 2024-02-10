@@ -1,13 +1,15 @@
-![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/callum-sim/SEMCOURSEWORK/main.yml?branch=master)
 
-[![LICENSE](https://img.shields.io/github/license/callum-sim/SEMCOURSEWORK.svg?style=flat-square)](https://github.com/callum-sim/SEMCOURSEWORK/blob/master/LICENSE)
+# Software Engineering Coursework
 
-[![Releases](https://img.shields.io/github/release/callum-sim/sem/all.svg?style=flat-square)](https://github.com/<github-username>/sem/releases)
+Master Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/callum-sim/SEMCOURSEWORK/main.yml?branch=master)
 
-# Software Engineering Methods
-![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/callum-sim/SEMCOURSEWORK/main.yml?branch=developer)
+Develop Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/callum-sim/SEMCOURSEWORK/main.yml?branch=develop)
 
-#-----------------------------\
-#This is a sample README file    
-#-----------------------------\ 
+License [![LICENSE](https://img.shields.io/github/license/callum-sim/SEMCOURSEWORK.svg?style=flat-square)](https://github.com/callum-sim/SEMCOURSEWORK/blob/master/LICENSE)
+
+Release [![Releases](https://img.shields.io/github/release/callum-sim/SEMCOURSEWORK/all.svg?style=flat-square)](https://github.com/callum-sim/SEMCOURSEWORK/releases)
+
+
+
+#This is a README file    
 
