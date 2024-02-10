@@ -5,6 +5,6 @@
 [![Releases](https://img.shields.io/github/release/callum-sim/sem/all.svg?style=flat-square)](https://github.com/<github-username>/sem/releases)
 
 #-----------------------------\
-#This is a sample README file   
+#This is a sample README file    
 #-----------------------------\ 
 
