@@ -33,7 +33,8 @@ Manager
 ## Trigger
 
 The manager determines that data analysts require more information regarding country population sizes in order. Alternatively, this could also come from data analysts requesting a report is produced and provided to them by a manager. 
-Main Success Scenario
+
+## Main Success Scenario
 1.	Manager determines data analysts require more information regarding country population sizes in order.
 2.	Manager enters the criteria and produces report using system that extracts this information from SQL database.
 3.	Manager provides this report to the data analyst(s).
