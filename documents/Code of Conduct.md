@@ -9,7 +9,7 @@ The SEM community is very dedicated to creating a welcoming and inclusive atmosp
 
 •	Inclusivity. Embrace and appreciate other peoples differences when it comes to ideas, background and experiences as everyone will have a different outlook. Make sure to create an environment where everyone feels welcomed and included.
 
-•	Respect. Make sure to treat everyone with respect and dignity. By respecting everyone’s perspective the community is a more diverse and inclusive community.
+•	Respect. Make sure to treat everyone with respect and dignity. By respecting everyone’s perspective the community is a more diverse and inclusive community. 
 
 •	Professionalism.  Always maintain a degree of professionalism and make sure to uphold ethical standards and academic integrity.
 
