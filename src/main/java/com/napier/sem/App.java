@@ -35,10 +35,10 @@ public class App
                 // Exit for loop
                 break;
             }
-            catch (SQLException sql)
+            catch (SQLException sqle)
             {
                 System.out.println("Failed to connect to database attempt " + Integer.toString(i));
-                System.out.println(sql.getMessage());
+                System.out.println(sqle.getMessage());
             }
             catch (InterruptedException ie)
             {
