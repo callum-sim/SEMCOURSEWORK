@@ -1,4 +1,0 @@
-[submodule "db/test_db"]
-	path = db/test_db
-	url = https://github.com/callum-sim/SEMCOURSEWORK/tree/feature/database/db
-
