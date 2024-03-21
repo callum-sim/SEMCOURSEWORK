@@ -32,5 +32,21 @@ public class App
         // Check document in collection
         Document myDoc = collection.find().first();
         System.out.println(myDoc.toJson());
+
+        // Create new Query_22 instance
+        Query_22 query22 = new Query_22();
+
+        // Connect to database
+        query22.connect();
+
+        // Extract top populated countries information in Europe
+        ArrayList<Country> countries = query22.getTopPopulatedCountriesInRegion("Europe");
+
+        // Test the size of the returned data
+        System.out.println("Number of top populated countries in Europe: " + countries.size());
+
+        // Disconnect from database
+        query22.disconnect();
+
     }
 }
