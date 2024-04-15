@@ -16,7 +16,6 @@ public class Query_4
         }
 
 
-
     }
     /**
      * Fetching all countries in the World largest to smallest, limited by 10
