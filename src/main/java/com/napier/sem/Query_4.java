@@ -44,7 +44,11 @@ public class Query_4
                     Connection connection = DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
 
                     // Creating and executing the SQL query
-                    String query = "SELECT * FROM country ORDER BY population DESC LIMIT 10";
+                    String query = "SELECT *" +
+                            "FROM country" +
+                            "ORDER BY population DESC" +
+                            "LIMIT 10";
+
                     Statement statement = connection.createStatement();
                     ResultSet resultSet = statement.executeQuery(query);
 
