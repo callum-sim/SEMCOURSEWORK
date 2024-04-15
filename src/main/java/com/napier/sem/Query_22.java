@@ -2,6 +2,10 @@ package com.napier.sem;
 
 import java.sql.*;
 
+/**
+ * The below code queries the top 10 populated countries in continent Europe
+ */
+
 public class Query_22 {
     static final int MAX_RETRIES = 10;
 

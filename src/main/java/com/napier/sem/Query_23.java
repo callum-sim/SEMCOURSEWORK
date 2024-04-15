@@ -2,6 +2,10 @@ package com.napier.sem;
 
 import java.sql.*;
 
+/**
+ * The below code queries the top 10 populated countries in region Caribbean
+ */
+
 public class Query_23 {
     static final int MAX_RETRIES = 10;
 
