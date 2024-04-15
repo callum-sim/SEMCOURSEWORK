@@ -42,7 +42,7 @@ public class Query_22 {
                 try {
                     connection = DriverManager.getConnection("jdbc:mysql://" + location + "/world?useSSL=false", "root", "example");
 
-                    String query = "SELECT city.name AS Name, country.name AS Country, city.population AS Population " +
+                    String query = "SELECT city.name AS Name, country.name AS Country, city.district AS District, city.population AS Population " +
                             "FROM city " +
                             "JOIN country ON city.ID = country.capital " +
                             "WHERE country.continent = 'Europe' " +
@@ -53,8 +53,9 @@ public class Query_22 {
                         while (resultSet.next()) {
                             String cityName = resultSet.getString("Name");
                             String countryName = resultSet.getString("Country");
+                            String District = resultSet.getString("District");
                             int population = resultSet.getInt("population");
-                            System.out.println("City: " + cityName + ", Country: " + countryName + ", Population: " + population);
+                            System.out.println("City: " + cityName + ", Country: " + countryName + ", District: " + District + ", Population: " + population);
                         }
                     }
                     break; // Successful retrieval, break out of retry loop
