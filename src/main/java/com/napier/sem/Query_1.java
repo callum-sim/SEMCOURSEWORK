@@ -42,13 +42,18 @@ public class Query_1 {
                 try {
                     connection = DriverManager.getConnection("jdbc:mysql://" + location + "/world?useSSL=false", "root", "example");
 
-                    String query = "SELECT * FROM country ORDER BY population DESC";
+                    String query = "SELECT Code, Name, Continent, Region, Population, Capital FROM country ORDER BY population DESC";
                     try (Statement statement = connection.createStatement();
                          ResultSet resultSet = statement.executeQuery(query)) {
                         while (resultSet.next()) {
-                            String countryName = resultSet.getString("name");
-                            int population = resultSet.getInt("population");
-                            System.out.println("Country: " + countryName + ", Population: " + population);
+                            String countryCode = resultSet.getString("Code");
+                            String countryName = resultSet.getString("Name");
+                            String continent = resultSet.getString("Continent");
+                            String region = resultSet.getString("Region");
+                            int population = resultSet.getInt("Population");
+                            int capital = resultSet.getInt("Capital");
+                            System.out.println("Country Code: " + countryCode + ", Name: " + countryName + ", Continent: " + continent +
+                                    ", Region: " + region + ", Population: " + population + ", Capital: " + capital);
                         }
                     }
                     break; // Successful retrieval, break out of retry loop
