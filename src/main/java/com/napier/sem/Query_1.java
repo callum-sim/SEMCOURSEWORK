@@ -1,8 +1,9 @@
+//  Query 1: All the countries in the world organised by largest population to smallest
 package com.napier.sem;
 
 import java.sql.*;
 
-public class App
+public class Query_1
 {
     public static void main(String[] args)
     {
@@ -15,8 +16,11 @@ public class App
         }
 
 
-    }
 
+    }
+    /**
+     * Fetching all countries in the World largest to smallest
+     */
     static Connection con = null;
     public void connect(String location, int delay) {
         try {
@@ -36,7 +40,31 @@ public class App
                     // Wait a bit for db to start
                     Thread.sleep(delay);
                 }
+                try {
+                    // Establishing a connection to the database
+                    Connection connection = DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
 
+                    // Creating and executing the SQL query
+                    String query = "SELECT * FROM country ORDER BY population DESC";
+                    Statement statement = connection.createStatement();
+                    ResultSet resultSet = statement.executeQuery(query);
+
+                    // Processing the results
+                    while(resultSet.next()) {
+                        // Accessing and printing data for each country
+                        String countryName = resultSet.getString("name");
+                        int population = resultSet.getInt("population");
+                        System.out.println("Country: " + countryName + ", Population: " + population);
+                    }
+
+                    // Closing the resources
+                    resultSet.close();
+                    statement.close();
+                    connection.close();
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
                 // Connect to database
                 System.out.println("Going in to  connect");
                 con = DriverManager.getConnection("jdbc:mysql://" + location
