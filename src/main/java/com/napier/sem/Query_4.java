@@ -2,6 +2,12 @@ package com.napier.sem;
 
 import java.sql.*;
 
+
+/**
+ * The below code queries the database to return countries, ordering populations
+ * from largest to smallest, limited to the top 10
+ */
+
 public class Query_4 {
     static final int MAX_RETRIES = 10;
 
