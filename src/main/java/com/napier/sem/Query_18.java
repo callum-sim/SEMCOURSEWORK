@@ -45,7 +45,7 @@ public class Query_18 {
 
                 try {
                     connection = DriverManager.getConnection("jdbc:mysql://" + location + "/world?useSSL=false", "root", "example");
-
+//
                     String query = "SELECT city.name AS Name, country.name AS Country, city.district AS District, city.population AS Population " +
                             "FROM city " +
                             "JOIN country ON city.ID = country.capital " +
