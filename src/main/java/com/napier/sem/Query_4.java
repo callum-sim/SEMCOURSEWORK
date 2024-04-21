@@ -4,10 +4,10 @@ import java.sql.*;
 
 /**
  * The below code queries the database to return countries, ordering populations
- * from largest to smallest
+ * from largest to smallest, limited to the top 10
  */
 
-public class Query_1 {
+public class Query_4 {
     static final int MAX_RETRIES = 10;
 
     public static void main(String[] args) {
@@ -47,7 +47,7 @@ public class Query_1 {
                 try {
                     connection = DriverManager.getConnection("jdbc:mysql://" + location + "/world?useSSL=false", "root", "example");
 
-                    String query = "SELECT Code, Name, Continent, Region, Population, Capital FROM country ORDER BY population DESC";
+                    String query = "SELECT Code, Name, Continent, Region, Population, Capital FROM country ORDER BY population DESC LIMIT 10";
                     try (Statement statement = connection.createStatement();
                          ResultSet resultSet = statement.executeQuery(query)) {
                         while (resultSet.next()) {
