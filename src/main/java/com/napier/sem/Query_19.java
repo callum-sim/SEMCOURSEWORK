@@ -3,10 +3,10 @@ package com.napier.sem;
 import java.sql.*;
 
 /**
- * The below code shows cities sorted by population descending
+ *  The below code shows cities in Europe sorted by population descending
  */
 
-public class Query_18 {
+public class Query_19 {
     static final int MAX_RETRIES = 10;
 
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Query_18 {
             delay = Integer.parseInt(args[1]);
         }
 
-        Query_18 query1 = new Query_18();
+        Query_19 query1 = new Query_19();
         query1.connect(location, delay);
     }
 
@@ -45,10 +45,11 @@ public class Query_18 {
 
                 try {
                     connection = DriverManager.getConnection("jdbc:mysql://" + location + "/world?useSSL=false", "root", "example");
-//
+
                     String query = "SELECT city.name AS Name, country.name AS Country, city.district AS District, city.population AS Population " +
                             "FROM city " +
                             "JOIN country ON city.ID = country.capital " +
+                            "WHERE country.continent = 'Europe' " +
                             "ORDER BY city.population DESC " ;
                     try (Statement statement = connection.createStatement();
                          ResultSet resultSet = statement.executeQuery(query)) {
